@@ -30,15 +30,18 @@ public class A7Q1 {
         Scanner input = new Scanner (System.in);
         
         //ask user to enter the radius
-        System.out.println("Enter the radius of the circle in centimeters;");
+        System.out.println("Enter the radius of the circle in centimeters");
         
         //input the radius of the circle
         double radius = input.nextDouble();
         
+        //calculate the answer of the area
         double answer = circleArea(radius);
         
+        //round to the nearest hundredth
         answer = Math.round(answer*100.0)/100.0;
         
+        //output the answer
         System.out.println("The area of the circle is " + answer + "cm squared.");
         
     }
