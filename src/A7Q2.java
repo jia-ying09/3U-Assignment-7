@@ -18,7 +18,7 @@ public class A7Q2 {
      */
     public static int examGrade(String grade) {
         // Tell the user what grade they got
-        System.out.println("You have an " + grade);
+        System.out.println("You have an " + grade + ".");
 
         return 0;
     }
