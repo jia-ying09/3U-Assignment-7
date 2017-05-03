@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class A7Q1 {
     /**
      * 
-     * @param radius
+     * @param radius find the radius
      * @return 
      */
     public static double circleArea(double radius) {
