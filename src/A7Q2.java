@@ -59,7 +59,7 @@ public class A7Q2 {
             //grade 80-100
         } else if (grade >= 80) {
             //output a A
-            examGrade("A");
+            examGrade("A" ".");
         }
     }
 }
