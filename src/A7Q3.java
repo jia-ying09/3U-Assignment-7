@@ -16,7 +16,9 @@ public class A7Q3 {
      * @param factor
      */
     public static void factors(int numbers) {
-        System.out.println(numbers + ", ");
+        
+        //outputting the factors
+        System.out.print(numbers + ", ");
     }
 
     /**
@@ -33,14 +35,15 @@ public class A7Q3 {
         //input the number the user entered
         int numbers = input.nextInt();
 
+        //for loop to collect all the numbers counting up to the  number
         for (int i = numbers; i > 0; i--) {
 
+            //divide the numbers to get the factors
             if (numbers % i == 0) {
-
                 
-            }
-            factors(numbers / i);
-                System.out.print(factors + ", ");
+            //outputting the factors for the numbers
+            factors(numbers / i);}
+                
         }
     }
 }
