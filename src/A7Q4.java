@@ -17,6 +17,8 @@ public class A7Q4 {
 
         //calculating the interest rate
         double balance = principal * power;
+        
+        balance = Math.round(balance);
 
         
         //outputing the calculation
@@ -52,7 +54,6 @@ public class A7Q4 {
 
         //input the given years
         int years = input.nextInt();
-
 
         //calculate the compund interest
         compoundInterest(principal, interest, years);

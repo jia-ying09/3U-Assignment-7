@@ -9,15 +9,18 @@ import java.util.Scanner;
  *
  * @author linj4653
  */
-public class A7Q6 {
+public class A7Q7 {
 
-    public static void lastDigit(int last) {
-
+    public static void firstDigit(int first) {
+        
+        for (int i = first; i < first / 10; i--){
+        
         //pulling apart the number
-        last = last % 10;
+        first = first / 10;
+        } 
 
-        //output the last digit
-        System.out.println(last);
+        //output the first digit
+        System.out.println(first);
 
     }
 
@@ -34,8 +37,8 @@ public class A7Q6 {
         //input the number
         int last = input.nextInt();
 
-        //outputting the last digit of the number
-        lastDigit(last);
+        //outputting the first digit of the number
+        firstDigit(last);
 
     }
 }
