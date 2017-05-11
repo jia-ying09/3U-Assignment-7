@@ -12,12 +12,12 @@ import java.util.Scanner;
 public class A7Q7 {
 
     public static void firstDigit(int first) {
-        
-        for (int i = first; i < first / 10; i--){
-        
-        //pulling apart the number
-        first = first / 10;
-        } 
+
+        for (int i = 2; i < first; i++) {
+
+            //pulling apart the number
+            first = first / 10;
+        }
 
         //output the first digit
         System.out.println(first);
@@ -35,10 +35,9 @@ public class A7Q7 {
         System.out.println("Enter the number:");
 
         //input the number
-        int last = input.nextInt();
+        int first = input.nextInt();
 
         //outputting the first digit of the number
-        firstDigit(last);
-
+        firstDigit(first);
     }
 }
