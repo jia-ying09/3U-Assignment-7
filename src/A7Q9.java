@@ -13,24 +13,35 @@ public class A7Q9 {
 
     public static void allDigitsOdd(int number) {
 
-        //creating a for loop
-        for (int i = 0; i < number; i++) {
+        while (true) {
+            //see if the first digit is divisiable
+            if (number % 2 == 0) {
 
-            //taking apart the number
-            number = number /10 % 10;}
+                //output that there are no even numbers
+                System.out.println("There is an even number.");
+                break;
 
-        //see if the number are divisiable
-        if (number % 2 == 0) {
+                //else statement
+            } else {
 
-            //output that there are no even numbers
-            System.out.println("There is an even number.");
+                for (int i = 0; i < number / 10; i++) {
 
-            //else statement
-        } else {
+                    //pulling apart the number
+                    number = number / 10;
 
-            //output that there are no even numbers
-            System.out.println("There are no even numbers.");
-        }
+                    //see if the digits are divisiable
+                    if (number % 2 == 0) {
+
+                        //output that there are no even numbers
+                        System.out.println("There is an even number.");
+
+                        break;
+
+                    }
+                }
+            }
+        } //output that there are no even numbers
+        System.out.println("There are no even numbers.");
     }
 
     /**
@@ -48,7 +59,5 @@ public class A7Q9 {
 
         //output wheither it is even or odd
         allDigitsOdd(number);
-
-
     }
 }

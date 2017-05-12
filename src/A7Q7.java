@@ -13,7 +13,7 @@ public class A7Q7 {
 
     public static void firstDigit(int first) {
 
-        for (int i = 2; i < first; i++) {
+        for (int i = 0; i < first / 10; i++) {
 
             //pulling apart the number
             first = first / 10;
@@ -21,7 +21,6 @@ public class A7Q7 {
 
         //output the first digit
         System.out.println(first);
-
     }
 
     /**
