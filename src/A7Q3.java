@@ -16,7 +16,7 @@ public class A7Q3 {
      * @param factor
      */
     public static void factors(int numbers) {
-
+        
         //outputting the factors
         System.out.print(numbers + ", ");
     }
@@ -40,10 +40,9 @@ public class A7Q3 {
 
             //divide the numbers to get the factors
             if (numbers % i == 0) {
-
-                //outputting the factors for the numbers
-                factors(numbers / i);
-            }
+                
+            //outputting the factors for the numbers
+            factors(numbers / i);}   
         }
     }
 }
